@@ -1,10 +1,22 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	background-color: rgba(250, 242, 240, 0.9);
 }
 
-body {
-	background-color: lightgrey;
+.name {
+	font-family: 'Pacifico', cursive;
+	font-size: 6vw;
+	color: #6f3466;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 0; 
+  	right: 0; 
+  	margin-left: auto; 
+  	margin-right: 5%; 
 }
 
 .outer-content {
@@ -12,6 +24,7 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	background-color: rgba(250, 242, 240, 0.8);
 }
 
 .middle-content {
@@ -26,6 +39,104 @@ body {
 }
 
 .segment {
+	background-image: url(../img/flower.jpg);
+	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
+	background-size: 100%;
+	position: relative;
 	height: 100%;
 	width: 100%;
+	margin-bottom: 500px;
+}
+
+/* For any viewports less than 1000px wide */
+@media (max-width: 1000px) {
+
+    .segment {
+        background-size: 1296px 864px; /* Force the image to its minimum width */
+    }
+
+}
+
+
+.segment-title {
+	color: #6f3466;
+	font-size: 50px;
+	margin-bottom: 30px;
+	font-family: 'Lobster', cursive;
+}
+
+.segment-body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form-container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#nameError {
+	color: red;
+	text-align: left!important;
+	display: none;
+}
+
+#nameError2 {
+	color: red;
+	text-align: left!important;
+	display: none;
+}
+
+#prayError {
+	color: red;
+	text-align: left!important;
+	display: none;
+}
+
+#placeError {
+	color: red;
+	display: none;
+}
+
+#notes {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+.thanks {
+	font-size: 100px;
+}
+
+label {
+	text-overflow: ellipsis;
+}
+
+.details-container {
+	height: 350px;
+	border: 8px solid #f7e7e3;
+	border-radius: 15px;
+	background-color: #f9d8cf;
+	padding: 5px;
+}
+
+.details-title {
+	font-family: 'Lobster', cursive;
+	color: #6f3466;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+#thanks {
+	margin-bottom: 0px;
+}
+
+#thanks .outer-content {
+	background-color: rgba(250, 242, 240, 0.8);
+}
+
+#place-attendance {
+	border: 2px solid #f7e7e3;
+	border-radius: 15px;
+	background-color: #f9d8cf;
+	margin: 0 15%;
+	padding: 10px 10px;
 }
