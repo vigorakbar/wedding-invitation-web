@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="aos/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Raleway|Pacifico" rel="stylesheet">
@@ -14,39 +14,59 @@
 
   </head>
   <body>
-    <div class="segment">
+    <div id="cover" class="segment" data-aos="fade-in">
+        <img src="img/flower_decoration2.png" class="flower" data-aos="fade-down" id="bungatop">
+        <div id="mirrored-top-flower-container" class="mirror-horizontal flower" >
+            <img src="img/flower_decoration2.png" data-aos="fade-down" id="mirrored-top-flower">
+        </div>
     	<div class="outer-content">
     		<div class="middle-content">
     			<div class="inner-content text-center">
-    				<div class="name">
-    					Via Apriani, S.Si.<br>
-    					&<br>
-    					Robby Izaty Ramadhan, S.T.
+    				<div class="name top-name-margin" data-aos="zoom-in-down" data-aos-delay="400" data-aos-easing="ease-out-back">
+    					Via Apriani, S.Si.
     				</div>
+                    <div class="name" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="700">
+                        &
+                    </div>
+                    <div class="name" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">
+                        Robby Izaty Ramadhan, S.T.
+                    </div>
     			</div>
     		</div>
     	</div>
     	<div>
-    		<a class="scroll-slow" href="#detail"><img class="arrow" src="img/arrow-down.png" title="Scroll Down"></a>
+    		<a class="scroll-slow" href="#detail1"><img class="arrow" src="img/arrow-down.png" title="Scroll Down" data-aos="fade-down" data-aos-anchor="#bungatop" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-back"></a>
     	</div>
     </div>
     <div id="detail" class="segment">
     	<div class="outer-content">
     		<div class="middle-content">
     			<div class="inner-content text-center">
-                    <div class="segment-title">Details</div>
+                    <div class="segment-title" data-aos="fade-down" id="detail-title">Details</div>
                     <div class="segment-body">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <div class="details-container">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div id="detail1" class="details-container" data-aos="fade-right" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
                                         <div class="details-title">
                                             Tangerang (Akad + Resepsi)
                                         </div>
+                                        <div>
+                                            Tanggal: Minggu, 1 juli 2018
+                                        </div>
+                                        <div>
+                                            Akad Nikah: 08.00 WIB
+                                        </div>
+                                        <div>
+                                            Resepsi: 10.00 WIB - Selesai
+                                        </div>
+                                        <div>
+                                            Lokasi: Jl. Halim Perdana Kusuma No. 03 RT. 02/05, Kel. Jurumudi, Kec. Benda, Kota Tangerang
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <div class="details-container">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="details-container" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
                                         <div class="details-title">
                                             Malang (Resepsi)
                                         </div>
@@ -59,7 +79,7 @@
     			</div>
     		</div>
             <div>
-            <a class="scroll-slow" href="#rsvp"><img class="arrow" src="img/arrow-down.png" title="Scroll Down"></a>
+            <a class="scroll-slow" href="#rsvp"><img class="arrow" src="img/arrow-down.png" title="Scroll Down"  data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600" data-aos-easing="ease-out-back" data-aos-delay="200"></a>
             </div>
     	</div>
     	
@@ -68,9 +88,9 @@
     	<div class="outer-content">
     		<div class="middle-content">
     			<div class="inner-content text-center">
-    				<h1 class="segment-title">RSVP</h1>
+    				<h1 class="segment-title" data-aos="zoom-in-down">RSVP</h1>
                     <div class="segment-body">
-                        <form class="form-container">
+                        <form class="form-container" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="400">
                             <div class="form-group row">
                                 <label for="name-input" class="col-sm-2 col-form-label-lg">Name</label>
                                 <div class="col-sm-10">
@@ -101,14 +121,14 @@
                                 <br>
                                 <small id="placeError" class="form-text">*Please choose at lease one place</small>
                             </div>
-                            <button id="submit-rsvp" class="btn btn-lg btn-primary" type="button" style="margin-top: 20px">Submit</button>
+                            <button id="submit-rsvp" class="btn btn-lg btn-primary" type="button" style="margin-top: 20px" >Submit</button>
                         </form>
                     </div>
     			</div>
     		</div>
     	</div>
     	<div>
-    		<a class="scroll-slow" href="#prayer"><img class="arrow" src="img/arrow-down.png" title="Scroll Down"></a>
+    		<a class="scroll-slow" href="#prayer"><img class="arrow" src="img/arrow-down.png" title="Scroll Down" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600" data-aos-easing="ease-out-back" data-aos-delay="200"></a>
     	</div>
     </div>
     <div id="prayer" class="segment">
@@ -116,11 +136,11 @@
     		<div class="middle-content">
     			<div class="inner-content text-center">
                     <div class="segment-title">
-                        <h1 aria-describeby="notes">Prayer</h1>
-                        <small id="notes" class="form-text">This is optional, fill it if you want :)</small>
+                        <h1 aria-describeby="notes" data-aos="fade-in">Prayer</h1>
+                        <small id="notes" class="form-text" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-out-back">This is optional, fill it if you want :)</small>
                     </div>
     				<div class="segment-body">
-                        <form class="form-container">
+                        <form class="form-container" data-aos="fade-left" data-aos-duration="400">
                             <div class="form-group row">
                                 <label for="name-input2" class="col-sm-2 col-form-label-lg">Name</label>
                                 <div class="col-sm-10">
@@ -142,21 +162,26 @@
     		</div>
     	</div>
         <div>
-            <a class="scroll-slow" href="#thanks"><img class="arrow" src="img/arrow-down.png" title="Scroll Down"></a>
+            <a class="scroll-slow" href="#thanks"><img class="arrow" src="img/arrow-down.png" title="Scroll Down" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600" data-aos-easing="ease-out-back" data-aos-delay="200"></a>
         </div>
     </div>
     <div id="thanks" class="segment">
         <div class="outer-content">
             <div class="middle-content">
                 <div class="inner-content text-center">
-                    <div class="segment-title thanks">
+                    <div class="rotate-image">
+                        <img src="img/flower_decoration.png" style="max-width: 100%" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                    </div>
+                    <div class="segment-title thanks" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1200">
                         Thank You
                     </div>
+                    <img src="img/flower_decoration.png" style="max-width: 100%" data-aos="fade-left" data-aos-delay="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="aos/dist/aos.js"></script>
+    <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

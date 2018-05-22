@@ -1,3 +1,10 @@
+$(function() {
+  AOS.init({
+     duration: 800,
+     offset:200
+  });
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -34,18 +41,27 @@ $("#submit-rsvp").click(function(){
 				malang = 1;
 			}
 		}
-		$.ajax({
-			type: "POST",
-			url: "model/model.php",
-			data: {'name' : name, 'attendance' : attendance, 'tangerang' : tangerang, 'malang' : malang},
-			success: function(data) {
-			   alert(data);
-			},
-			 error: function(){
-                alert("error in ajax form submission");
-            }
+		alertify.confirm("Submit RSVP?", function () {
+			// user clicked "ok"
+			$.ajax({
+				type: "POST",
+				url: "model/model.php",
+				data: {'name' : name, 'attendance' : attendance, 'tangerang' : tangerang, 'malang' : malang},
+				success: function(data) {
+				   // confirm dialog
+				   alertify.success("your response has been submitted");
+				},
+				 error: function(){
+	                alertify.error("error in ajax form submission");
+	            }
+			});
+		}, function() {
+			// user clicked "cancel"
+			alertify.log("submit cancelled");
 		});
+		
 	} else {
+		alertify.error("please fill all the fields");
 		if ($("#name-input").val() == '') {
 			$("#nameError").css('display', 'block');
 		} else {

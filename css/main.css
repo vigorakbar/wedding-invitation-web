@@ -5,18 +5,24 @@ html, body {
 }
 
 .name {
+	position: relative;
+	z-index: 2;
 	font-family: 'Pacifico', cursive;
-	font-size: 6vw;
+	font-size: 5vw;
 	color: #6f3466;
 }
 
 .arrow {
+	padding: 10px;
+	border-radius: 15px; 
+	background-color:rgba(249, 216, 207, 0.9);
     position: absolute;
     bottom: 20px;
     left: 0; 
   	right: 0; 
   	margin-left: auto; 
   	margin-right: 5%; 
+  	z-index: 2;
 }
 
 .outer-content {
@@ -46,16 +52,9 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin-bottom: 500px;
+	overflow: hidden;
 }
 
-/* For any viewports less than 1000px wide */
-@media (max-width: 1000px) {
-
-    .segment {
-        background-size: 1296px 864px; /* Force the image to its minimum width */
-    }
-
-}
 
 
 .segment-title {
@@ -104,6 +103,7 @@ html, body {
 
 .thanks {
 	font-size: 100px;
+	margin-bottom: 0;
 }
 
 label {
@@ -111,10 +111,13 @@ label {
 }
 
 .details-container {
-	height: 350px;
+	height: 400px;
+	/*width: 700px;*/
+	max-width: 700px;
+	margin: 10px auto;
 	border: 8px solid #f7e7e3;
 	border-radius: 15px;
-	background-color: #f9d8cf;
+	background-color: rgba(249, 216, 207, 1);
 	padding: 5px;
 }
 
@@ -139,4 +142,93 @@ label {
 	background-color: #f9d8cf;
 	margin: 0 15%;
 	padding: 10px 10px;
+}
+
+.flower {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	margin-top: -50px;
+}
+
+.rotate-image {
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.mirror-horizontal {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.top-name-margin {
+	margin-top: 80px;
+}
+
+
+
+.alertify .dialog>* {
+	/*custom alertify alert box style*/
+
+}
+
+#mirrored-top-flower {
+	width: 100%;
+}
+
+#mirrored-top-flower-container {
+	right: 0;
+}
+
+/* For any viewports less than 1000px wide */
+@media (max-width: 1000px) {
+	.flower {
+		margin-top: 0px;
+	}
+
+    .segment {
+        background-size: 1296px 864px; /* Force the image to its minimum width */
+    }
+    .name {
+    	font-size: 7vw;
+    }
+
+    .top-name-margin {
+    	margin-top: 0px;
+    }
+}
+
+/* For any viewports less than 768px wide */
+/*@media (max-width: 768px) {*/
+	#detail {
+		height: 150%;
+		background-size: auto 100%;
+	}
+/*}*/
+
+/* For any viewports less than 500px wide */
+@media (max-width: 500px) {
+	.flower {
+    	width: 200%;
+    	/*overflow: hidden;*/
+    }
+
+    #mirrored-top-flower {
+		right: 0;
+		left: 33%;
+	}
+
+    .arrow {
+    	width: 42px;
+    	height: auto;
+    }
+
+    .thanks {
+    	font-size: 70px;
+    }
 }
