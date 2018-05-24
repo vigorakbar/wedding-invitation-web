@@ -1,7 +1,8 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(250, 242, 240, 0.8);
+	background-image: url(../img/flower2.jpg);
+	background-position: 10% 0;
 }
 
 .name {
@@ -30,7 +31,7 @@ html, body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(250, 242, 240, 0.8);
+	/*background-color: rgba(250, 242, 240, 0.8);*/
 }
 
 .middle-content {
@@ -45,13 +46,15 @@ html, body {
 }
 
 .segment {
-	background-image: url(../img/flower.jpg);
-	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
+	/*background-image: url(../img/flower.jpg);
+	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; */
+
+	background-color: rgba(250, 242, 240, 0.6);
 	background-size: 100%;
 	position: relative;
 	height: 100%;
 	width: 100%;
-	margin-bottom: 500px;
+	/*margin-bottom: 500px;*/
 	overflow: hidden;
 }
 
@@ -111,29 +114,39 @@ label {
 }
 
 .details-container {
-	height: 400px;
+	height: 450px;
 	/*width: 700px;*/
 	max-width: 700px;
 	margin: 10px auto;
-	border: 8px solid #f7e7e3;
+	/*border: 8px solid #f7e7e3;
 	border-radius: 15px;
-	background-color: rgba(249, 216, 207, 1);
+	background-color: rgba(249, 216, 207, 1);*/
 	padding: 5px;
 }
 
 .details-title {
 	font-family: 'Lobster', cursive;
 	color: #6f3466;
-	font-size: 25px;
+	font-size: 26px;
 	margin-bottom: 20px;
+}
+
+.details-highlight {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+}
+
+.details-detail {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+}
+
+.small-title {
+	margin-bottom: 0px;
 }
 
 #thanks {
 	margin-bottom: 0px;
-}
-
-#thanks .outer-content {
-	background-color: rgba(250, 242, 240, 0.8);
 }
 
 #place-attendance {
@@ -206,7 +219,7 @@ label {
 /* For any viewports less than 768px wide */
 /*@media (max-width: 768px) {*/
 	#detail {
-		height: 150%;
+		height: 180%;
 		background-size: auto 100%;
 	}
 /*}*/
@@ -230,5 +243,24 @@ label {
 
     .thanks {
     	font-size: 70px;
+    }
+
+    .details-container {
+    	height: 510px;
+    }
+
+    html, body {
+    	background-position: 26% 0;
+    }
+}
+
+/* For any viewports less than 365px wide */
+@media (max-width: 365px) {
+	.details-container {
+    	height: 610px;
+    }
+
+    #detail {
+    	height: 250%;
     }
 }
