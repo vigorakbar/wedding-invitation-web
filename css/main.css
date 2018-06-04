@@ -1,7 +1,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	background-image: url(../img/flower2.jpg);
+	/*background-image: url(../img/flower2.jpg);*/
 	background-position: 10% 0;
 }
 
@@ -49,7 +49,7 @@ html, body {
 	/*background-image: url(../img/flower.jpg);
 	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; */
 
-	background-color: rgba(250, 242, 240, 0.6);
+	background-color: rgba(250, 242, 240, 1);
 	background-size: 100%;
 	position: relative;
 	height: 100%;
@@ -58,7 +58,30 @@ html, body {
 	overflow: hidden;
 }
 
+.segment-space {
+	background-color: rgba(250, 242, 240, 1);
+	background-size: 100%;
+	position: relative;
+	height: 60%;
+	width: 100%;
+	/*margin-bottom: 500px;*/
+	overflow: hidden;
+}
 
+.img-responsive {
+	display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-separator {
+	padding-top:20px;
+	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
 
 .segment-title {
 	color: #6f3466;
@@ -127,7 +150,7 @@ label {
 .details-title {
 	font-family: 'Lobster', cursive;
 	color: #6f3466;
-	font-size: 26px;
+	font-size: 28px;
 	margin-bottom: 20px;
 }
 
@@ -143,6 +166,7 @@ label {
 
 .small-title {
 	margin-bottom: 0px;
+	font-size: 26px;
 }
 
 #thanks {
@@ -164,6 +188,29 @@ label {
 	margin-top: -50px;
 }
 
+.btn-light {
+	color: #6f3466;
+	font-weight: bold;
+	background: rgba(249, 216, 207, 1);
+	border: 2px solid #f7e7e3;
+}
+
+.btn-light:hover {
+	background: rgba(247, 181, 163, 1);
+}
+
+.atc-style-blue .atcb-link, .atc-style-blue .atcb-link:active, .atc-style-blue .atcb-link:focus {
+	color: #6f3466;
+	font-weight: bold;
+	background: rgba(249, 216, 207, 1);
+	box-shadow: none;
+	border: 2px solid #f7e7e3;
+}
+
+.atc-style-blue .atcb-link:hover {
+	background: rgba(247, 181, 163, 1);
+}
+
 .rotate-image {
 	-webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -183,7 +230,9 @@ label {
 	margin-top: 80px;
 }
 
-
+#detail1 {
+	/*border-top: 1px black double;*/
+}
 
 .alertify .dialog>* {
 	/*custom alertify alert box style*/
@@ -245,22 +294,11 @@ label {
     	font-size: 70px;
     }
 
-    .details-container {
+    /*.details-container {
     	height: 510px;
-    }
+    }*/
 
     html, body {
     	background-position: 26% 0;
-    }
-}
-
-/* For any viewports less than 365px wide */
-@media (max-width: 365px) {
-	.details-container {
-    	height: 610px;
-    }
-
-    #detail {
-    	height: 250%;
     }
 }
