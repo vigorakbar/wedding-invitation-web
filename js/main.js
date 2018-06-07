@@ -113,27 +113,6 @@ $("#submit-prayer").click(function(){
 	}
 });
 
-// function submitPrayer() {
-// 	var valid = validatePrayer();
-// 	if(valid) {
-// 		$("#nameError2").hide();
-// 		$("#prayError").hide();
-
-// 	} else {
-// 		if ($("#name-input2").val() == '') {
-// 			$("#nameError2").css('display', 'block');
-// 		} else {
-// 			$("#nameError2").hide();
-// 		}
-// 		if ($("#prayer-input").val() == '') {
-// 			$("#prayError").css('display', 'block');
-// 		} else {
-// 			$("#prayError").hide();
-// 		}
-// 	}
-// 	return valid;
-// }
-
 function validateRSVP() {
 	return !($("#name-input").val() == '' || (($("#attendance-input").val() != 'no') && !($("#tangerang").is(":checked") || $("#malang").is(":checked"))));
 }

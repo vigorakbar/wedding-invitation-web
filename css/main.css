@@ -1,7 +1,6 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	/*background-image: url(../img/flower2.jpg);*/
 	background-position: 10% 0;
 }
 
@@ -31,7 +30,6 @@ html, body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	/*background-color: rgba(250, 242, 240, 0.8);*/
 }
 
 .middle-content {
@@ -46,15 +44,11 @@ html, body {
 }
 
 .segment {
-	/*background-image: url(../img/flower.jpg);
-	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; */
-
 	background-color: rgba(250, 242, 240, 1);
 	background-size: 100%;
 	position: relative;
 	height: 100%;
 	width: 100%;
-	/*margin-bottom: 500px;*/
 	min-height: 640px;
 	overflow: hidden;
 }
@@ -65,7 +59,6 @@ html, body {
 	position: relative;
 	height: 60%;
 	width: 100%;
-	/*margin-bottom: 500px;*/
 	overflow: hidden;
 }
 
@@ -234,7 +227,8 @@ label {
 
 #detail {
 	min-height: 1200px;
-	/*border-top: 1px black double;*/
+	height: 180%;
+	background-size: auto 100%;
 }
 
 .alertify .dialog>* {
@@ -276,14 +270,6 @@ label {
     	margin-top: 0px;
     }
 }
-
-/* For any viewports less than 768px wide */
-/*@media (max-width: 768px) {*/
-	#detail {
-		height: 180%;
-		background-size: auto 100%;
-	}
-/*}*/
 
 /* For any viewports less than 500px wide */
 @media (max-width: 500px) {
