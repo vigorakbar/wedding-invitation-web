@@ -47,12 +47,11 @@ $("#submit-rsvp").click(function(){
 				type: "POST",
 				url: "model/model.php",
 				data: {'name' : name, 'attendance' : attendance, 'tangerang' : tangerang, 'malang' : malang},
-				success: function(data) {
-				   // confirm dialog
-				   alertify.success("your response has been submitted");
+				 success: function(data) {
+					 swal("It's Done!", "Thank you for your response", "success");
 				},
 				 error: function(){
-	                alertify.error("error in ajax form submission");
+	                 alertify.error("error in ajax form submission");
 	            }
 			});
 		}, function() {
@@ -76,22 +75,29 @@ $("#submit-rsvp").click(function(){
 });
 
 $("#submit-prayer").click(function(){
+	alertify.logPosition
 	var valid = validatePrayer();	
 	if(valid) {
 		$("#nameError2").hide();
 		$("#prayError").hide();
 		var name = $("#name-input2").val();
 		var prayer = $("#prayer-input").val();
-		$.ajax({
-			type: "POST",
-			url: "model/model.php",
-			data: {'prayerName' : name, 'prayer' : prayer},
-			success: function(data) {
-			   alert(data);
-			},
-			 error: function(){
-                alert("error in ajax form submission");
-            }
+		alertify.confirm("Submit Prayer?", function () {
+			// user clicked "ok"
+			$.ajax({
+				type: "POST",
+				url: "model/model.php",
+				data: {'prayerName' : name, 'prayer' : prayer},
+				success: function(data) {
+				    swal("It's Done!", "Thank you for your response", "success");
+				},
+				 error: function(){
+	                alertify.error("error in ajax form submission");
+	            }
+			});
+		}, function() {
+			//user click cancel
+			alertify.log("submit cancelled");
 		});
 	} else {
 		if ($("#name-input2").val() == '') {
