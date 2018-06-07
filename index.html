@@ -7,6 +7,7 @@
 
     <link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="aos/dist/aos.css" />
+    <link rel="stylesheet" href="alertify/dist/css/alertify.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Raleway:700|Pacifico" rel="stylesheet">
@@ -31,13 +32,13 @@
     	<div class="outer-content">
     		<div class="middle-content">
     			<div class="inner-content text-center">
-    				<div class="name top-name-margin" data-aos="zoom-in-down" data-aos-delay="400" data-aos-easing="ease-out-back">
+    				<div class="name top-name-margin" data-aos="zoom-in-down" data-aos-delay="400" data-aos-easing="ease-out-back" data-aos-anchor-placement="top-bottom">
     					Via Apriyani, S.Si.
     				</div>
-                    <div class="name" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="700">
+                    <div class="name" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
                         &
                     </div>
-                    <div class="name" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">
+                    <div class="name" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
                         Robby Izaty Ramadhan, S.T.
                     </div>
     			</div>
@@ -67,10 +68,10 @@
                                         <div class="details-highlight">
                                             Sunday, 01 july 2018
                                         </div>
-                                        <div class="details-detail">
+                                        <div class="details-detail" >
                                             09.00 - 17.00
                                         </div>
-                                        <span class="addtocalendar atc-style-blue" style="margin: 5px; margin-top: 10px">
+                                        <span class="addtocalendar atc-style-blue" style="margin: 5px; margin-top: 10px" id="akad">
                                             <var class="atc_event">
                                                 <var class="atc_date_start">2018-07-01 09:00:00</var>
                                                 <var class="atc_date_end">2018-07-01 17:00:00</var>
@@ -98,7 +99,7 @@
                                         <div class="details-detail">
                                             Jl. Halim Perdana Kusuma No. 03 RT. 02/05, Kel. Jurumudi, Kec. Benda, Kota Tangerang
                                         </div>
-                                        <a href="#" class="btn btn-light btn-sm" title="Open in Google Maps" style="margin: 5px">
+                                        <a href="https://bit.ly/reception-1" class="btn btn-light btn-sm" title="Open in Google Maps" style="margin: 5px" target="_blank">
                                           <span><img src="img/gmaps.png"></span> Open in Google Maps
                                         </a>
                                     </div>
@@ -148,7 +149,7 @@
                                         <div class="details-detail">
                                             Skodam Hall V Brawijaya, Jl. Tugu No.2, Klojen,<br>Kota Malang, Jawa Timur
                                         </div>
-                                        <a href="#" class="btn btn-light btn-sm" title="Open in Google Maps" style="margin: 5px">
+                                        <a href="https://bit.ly/reception-2" target="_blank" class="btn btn-light btn-sm" title="Open in Google Maps" style="margin: 5px">
                                           <span><img src="img/gmaps.png"></span> Open in Google Maps
                                         </a>
                                     </div>
@@ -233,7 +234,7 @@
                             <div class="form-group row">
                                 <label for="prayer-input" class="col-sm-2 col-form-label-lg">Prayer</label>
                                 <div class="col-sm-10">
-                                    <textarea id="prayer-input" class="form-control form-control" aria-describedby="nameError" rows="8" placeholder="Your Prayer" name="prayer"></textarea>
+                                    <textarea id="prayer-input" class="form-control form-control" aria-describedby="nameError" rows="8" placeholder="Your Prayer" name="prayer" style="resize: none;"></textarea>
                                     <small id="prayError" class="form-text">*Please fill out the prayer</small>
                                 </div>
                             </div>
@@ -264,9 +265,9 @@
         </div>
     </div>
     <script src="aos/dist/aos.js"></script>
-    <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+    <script src="alertify/dist/js/alertify.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
