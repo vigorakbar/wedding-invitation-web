@@ -8,8 +8,12 @@ html, body {
 	position: relative;
 	z-index: 2;
 	font-family: 'Pacifico', cursive;
-	font-size: 5.4vw;
+	font-size: 5vw;
 	color: #6f3466;
+}
+
+.walimatul {
+	font-size: 6vw;
 }
 
 .arrow {
@@ -222,7 +226,7 @@ label {
 }
 
 .top-name-margin {
-	margin-top: 80px;
+	margin-top: 170px;
 }
 
 #detail {
@@ -266,8 +270,13 @@ label {
     	font-size: 7vw;
     }
 
+    .walimatul {
+    	font-size: 8vw;
+    	margin-bottom: 25px;
+    }
+
     .top-name-margin {
-    	margin-top: 0px;
+    	margin-top: 10px;
     }
 }
 
