@@ -1,11 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "vr_wedding";
+$servername = $_SERVER['RDS_HOSTNAME'];
+$username = $_SERVER['RDS_USERNAME'];
+$password = $_SERVER['RDS_PASSWORD'];
+$dbname = $_SERVER['RDS_DB_NAME'];
+$port = $_SERVER['RDS_PORT'];
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Check connection
 if ($conn->connect_error) {
