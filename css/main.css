@@ -55,6 +55,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	/*margin-bottom: 500px;*/
+	min-height: 640px;
 	overflow: hidden;
 }
 
@@ -137,13 +138,8 @@ label {
 }
 
 .details-container {
-	height: 450px;
-	/*width: 700px;*/
 	max-width: 700px;
 	margin: 10px auto;
-	/*border: 8px solid #f7e7e3;
-	border-radius: 15px;
-	background-color: rgba(249, 216, 207, 1);*/
 	padding: 5px;
 }
 
@@ -177,7 +173,9 @@ label {
 	border: 2px solid #f7e7e3;
 	border-radius: 15px;
 	background-color: #f9d8cf;
-	margin: 0 15%;
+	min-width: 190px;
+	max-width: 450px;
+	margin: 0 auto;
 	padding: 10px 10px;
 }
 
@@ -230,13 +228,23 @@ label {
 	margin-top: 80px;
 }
 
-#detail1 {
+#detail {
+	min-height: 1200px;
 	/*border-top: 1px black double;*/
 }
 
 .alertify .dialog>* {
 	/*custom alertify alert box style*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	border: 5px solid #f7e7e3;
+	border-radius: 20px;
+	background-color: #f9d8cf;
+}
 
+.swal-modal {
+	border-radius: 43px;
+	border: 10px solid rgb(249, 216, 207);
 }
 
 #mirrored-top-flower {
