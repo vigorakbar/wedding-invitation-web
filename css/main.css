@@ -310,3 +310,10 @@ label {
     	background-position: 26% 0;
     }
 }
+
+/* For any viewports less than 370px wide */
+@media (max-width: 370px) {
+	#mainTitleContent {
+		margin-bottom: 130px;
+	}
+}
