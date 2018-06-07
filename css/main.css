@@ -9,7 +9,7 @@ html, body {
 	position: relative;
 	z-index: 2;
 	font-family: 'Pacifico', cursive;
-	font-size: 5vw;
+	font-size: 5.4vw;
 	color: #6f3466;
 }
 
@@ -80,6 +80,10 @@ html, body {
 .line-separator {
 	padding-top:20px;
 	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+.line-separator1 {
 	width: 100%;
 	text-align: center;
 }
